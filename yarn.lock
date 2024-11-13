@@ -844,6 +844,432 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@dev.hiconic/gm_absence-information-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_absence-information-model/-/gm_absence-information-model-2.0.24.tgz#0859bd04ff444870d625b4734513310722fdec48"
+  integrity sha512-Uv6dvIYh5HBECl3GXWVc2B52dDtlzvXoML6yVKcwA2AguogZw8QwoEgsbZf5SykWOQBQAHSwhgAFfuCLywJGHQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_access-api-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_access-api-model/-/gm_access-api-model-2.0.25.tgz#b0b6502780fd27e3125f8b50509b45fd3b986502"
+  integrity sha512-1D/6qjqRGicOoRZZ4R+Mdut4r7n5N1XiCcNRzV64RShhfu0hyYE7MkMI4ZjgFBhtMW0+hn2rMObainnuLDDjzQ==
+  dependencies:
+    "@dev.hiconic/gm_access-request-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_manipulation-model" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_query-model" "2.0.x"
+
+"@dev.hiconic/gm_access-control-model@2.0.x":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_access-control-model/-/gm_access-control-model-2.0.28.tgz#0cfd31de2a13b8a944560ef02590c5302e48aadb"
+  integrity sha512-9IMH6oMH5nwjdTx29/6d2T6iIOjje0qLDIF2VgAe7aQ665+h28+3WqEoGZoAs1Q6ZNBAeC9UYbG76QlC4Jd66Q==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_access-request-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_access-request-model/-/gm_access-request-model-2.0.22.tgz#f660add71b2d4a5f5fe7da8f2fbcde2d17e417e8"
+  integrity sha512-U3nqzas4Ek12rSVjQyXFhiNMhWuuhEG7qDfQ9tCoW3vTe9uCXfdvSusbAGpUUYuO8hIMPY3EcapKnzEogqtVOw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+
+"@dev.hiconic/gm_basic-resource-model@2.0.x":
+  version "2.0.26"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_basic-resource-model/-/gm_basic-resource-model-2.0.26.tgz#6cfcfa5a23849034d99becc26f8b91ba61373d68"
+  integrity sha512-RMWZ9C7S/ySWZnI/LCtOF6hiByawnFFImjXEtRTu/Q+WzIWdXOU6BEUDsZ+f+BKB8ORDKHXUY0CARbUw1nIHlg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_resource-model" "2.0.x"
+
+"@dev.hiconic/gm_basic-value-descriptor-model@2.0.x":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_basic-value-descriptor-model/-/gm_basic-value-descriptor-model-2.0.28.tgz#deb7ef6bd6583b6f77b75450c50f7356517a7da4"
+  integrity sha512-pb0UXYjuBqZOuZ5xL1CcjpCkYoLxIlxvEkeanfxH8LFHllBQzoboKEJvggocbwTLHcqCVmDFceBsrd5JXOmyxA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_time-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_cache-control-model@2.0.x":
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_cache-control-model/-/gm_cache-control-model-2.0.27.tgz#05221e3bed5bffef49c25d1f2bba10f6da7efabd"
+  integrity sha512-wg6l2wvd70SPaiiQ43ZzFAEBg4W7tXYe+j7Qs6Qmn5hs037HREhBMTaNslCjzwxYxxgK8EP4sqAlNp8ZChguqQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_descriptive-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_descriptive-model/-/gm_descriptive-model-2.0.22.tgz#b73add9eda78af51d8d76c23854b4d398b7de4a2"
+  integrity sha512-DUIPWf/XQBP80PKUJvZ0Wkf6YK96wXSzSfsJzovhhpFoyjWQOrsDZZtXsHY+kr1QPgFdZ3SMo8DrbaSII1iYvg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_essential-meta-data-model@2.0.x":
+  version "2.0.29"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_essential-meta-data-model/-/gm_essential-meta-data-model-2.0.29.tgz#56a7abcd8809ac819fbac68bc3e9165b25e29f95"
+  integrity sha512-z6H+tLDwXDi0vnpyMCVfrfRuCW/w1bpsCZQzOZXGWRXGJuzRAGQevWi2DdbKbD2ci/uWkOlOb7sZcFwvhUvC6w==
+  dependencies:
+    "@dev.hiconic/gm_descriptive-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_meta-data-model" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_type-condition-model" "2.0.x"
+
+"@dev.hiconic/gm_gm-core-api@2.0.x":
+  version "2.0.82"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_gm-core-api/-/gm_gm-core-api-2.0.82.tgz#45e80c9a58038216e0659424ec8e95d6519d05c6"
+  integrity sha512-AuFL448NdXVms+O23KcEKBVYB9aFgWksgnyEe1LV8lxh5AH+lEq4rI+E4gsGyoFoYuX8KoKw9pqCwPo6XE04DQ==
+
+"@dev.hiconic/gm_i18n-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_i18n-model/-/gm_i18n-model-2.0.22.tgz#1d773686a2ebd06f52a2f1354ac3bd3db9aaf149"
+  integrity sha512-IcirSj/zEyUvvt3hNhIchUCItl8k+v9Tn3wYxONCzIMeR4EHJlZLwWeU2JY9UCU8fTjaunyKM0hnC48qIYj63Q==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_icon-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_icon-model/-/gm_icon-model-2.0.22.tgz#ef2906d3e52aa6a59d5225bbb8eccacdfff6cb6f"
+  integrity sha512-XKHJSFD45oIk2cy2c9fvmJ1pWD1/YpPMXkI77tYBmaMitbHogcwLEcZW43usV8t2h7r3eIB0L6bB4RdxGhFGvA==
+  dependencies:
+    "@dev.hiconic/gm_basic-resource-model" "2.0.x"
+    "@dev.hiconic/gm_descriptive-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+
+"@dev.hiconic/gm_logging-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_logging-model/-/gm_logging-model-2.0.25.tgz#7cb5c160ace93e6e041a25a93db8ac9e4ef96378"
+  integrity sha512-eiJ/HwmGF9m8iVSvbjZ6Ak4Wn4VATK182UjGTbIg3jq99A0BLbNzScJQ4x+BBrlgKHc0pX8wr8g2ekUvkt7oJQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_manipulation-model@2.0.x":
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_manipulation-model/-/gm_manipulation-model-2.0.27.tgz#f6c1fd5d073c21b1059ef95bf5b3ccb7bad40a16"
+  integrity sha512-tF4xWCl7NJcNoG8m2b9aUCQeZey2pJk+8lzVWHdwn3Jv2U5rEGxlFfuZwo9S3OM+Vo88aNEujVs1C0eIWCDa7g==
+  dependencies:
+    "@dev.hiconic/gm_absence-information-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_owner-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_meta-data-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_meta-data-model/-/gm_meta-data-model-2.0.25.tgz#5af9ef2996403184072fbfc86b336bb2f5019669"
+  integrity sha512-sAQs/ApTrkn9LGgtDEyqJ87bSrVwo4WRddjZZ2ddYvJ8/rfFIDRuPxGns29IPz7prLu8SqZcB+/+7glL+Ygljw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_selector-model" "2.0.x"
+
+"@dev.hiconic/gm_meta-model-api-model@2.0.x":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_meta-model-api-model/-/gm_meta-model-api-model-2.0.3.tgz#006c729a801c2e60694e8a8723ed6709ee23dfce"
+  integrity sha512-wCKpMlP9MgohHq0VEb33iZ+Tvz8L8kqXEs4psVlytHzHvKu15kfRvWcdandNkZAMioZYGwb5PQvHdWkYPVPTwg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_meta-model@2.0.x":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_meta-model/-/gm_meta-model-2.0.28.tgz#9dddd47c77df8805d780088cd3b3eac84386c39c"
+  integrity sha512-3pgMQjNlCCK+xf6mZ2WVx5KmCQDO0PLkdoQ0/t7qWmf4m+xS450FCzD56W0ZaP3ncPsKom6hfLOeeva8iSF8AQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_meta-data-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_model-accessory-api-model@2.0.x":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_model-accessory-api-model/-/gm_model-accessory-api-model-2.0.28.tgz#e16e407e88302fa5d8c278afdbda0fc7cf09bf47"
+  integrity sha512-SLtoIvlBlvHkoEuqr8azR6kaWCXnwUB2L3ZyHiennuDviBodSpTqw3C5cjVvc6n28pmZnLEbOCX3Kv40qsigcg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+
+"@dev.hiconic/gm_model-path-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_model-path-model/-/gm_model-path-model-2.0.25.tgz#a6f243aa1268359b25df145ab0c3179cc25f90b7"
+  integrity sha512-2P7nZpJDaSV5J+8g3T2UGniJiqXcgtQSymDqC7wLdiynENqQw2cy5i1kUinJtwI1OhSA6GvRHYnXnLXLDynGJg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_owner-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_owner-model/-/gm_owner-model-2.0.24.tgz#55742c81424c9854b00e7b8309bc53255535d90e"
+  integrity sha512-jOl36tLzL2vELxQNjGYJm1ZlJBqg2shBBe6anUGYB+1Tz9ktXwU3ejCi285eVBAvMJnDK48PZAI6kGzAFSo5kA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_pagination-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_pagination-model/-/gm_pagination-model-2.0.22.tgz#cf02dc6eb5a965ea55c8f91f8cfd69dae2761573"
+  integrity sha512-RFy41dN5fH+/esPWYyS2zuD5Q3UwvItssS0zB1NcaE9VCIRCXg+MFpfl1truSbb3R9Znzhvrr4S4VlIUccbu7w==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_persistence-reflection-api-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_persistence-reflection-api-model/-/gm_persistence-reflection-api-model-2.0.25.tgz#f450d69b6911ff42dd21c22e34a1d43f38b37d6d"
+  integrity sha512-7IRwadz0AIO+jDZIlXNcsXDmK2Ar8Hnwpjr2HbVhESSkRq96UvAT8lv1vxxK0QS4IJZL/nrBAzHdS+ZeSOjfpg==
+  dependencies:
+    "@dev.hiconic/gm_access-api-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+
+"@dev.hiconic/gm_query-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_query-model/-/gm_query-model-2.0.25.tgz#5e3ed1a2a49e2c9a49b4f4fabea382d014f08abb"
+  integrity sha512-Qx8ut8rj0cspR34QJraeje+34Muo9cB3SULUQ0IaWPP9S8oMeFA9usUfaxGvnEK6hG5QSvcR1hX5wQeQk4ujoA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_owner-model" "2.0.x"
+    "@dev.hiconic/gm_pagination-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_traversing-criteria-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_query-plan-model@2.0.x":
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_query-plan-model/-/gm_query-plan-model-2.0.27.tgz#7daa274253f4b18e6a27bfc85be3727867ae3a71"
+  integrity sha512-H4aU3C3wAmZRWo9D/MmBXvdVaxao9r74U2zzn6jbH7zB5UyReBBSnsjDa8Js4rezP6avGh6ESemASutW7WSpBQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_query-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_reason-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_reason-model/-/gm_reason-model-2.0.24.tgz#ee54f1cf224a83739b10e4a8b87dd504099e63aa"
+  integrity sha512-bzRCTmDXJGfVwxppcrRwgpULbIV5Ht4hJE09mj9sOgFugTGXFC+9TX5JfLhg+v/HF+rDNDa7ia/5yGaXFmL1yQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_record-model@2.0.x":
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_record-model/-/gm_record-model-2.0.23.tgz#55acf52e1232ffe87a79068cc7b25b7b32003ec9"
+  integrity sha512-UJbKEtUsSseeZNmZRJGL7hDElbZdHJY1wtwIjNJxQ6UjwxFPPWrFuk/UTGSKrzX2JX11zb/S606hLegCxkFA8g==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_resource-api-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_resource-api-model/-/gm_resource-api-model-2.0.25.tgz#bdcbc037a856c2c1df24851c59bed9ca6eda209e"
+  integrity sha512-NoKzVgbdzuGUY+ReMiHq+zLKaubQZfRvRBe0qcVtSASiMbdu+HwFj7u8J1LvZlCHZ2E3l+pDhMO+/3FdQlwwLg==
+  dependencies:
+    "@dev.hiconic/gm_access-request-model" "2.0.x"
+    "@dev.hiconic/gm_cache-control-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+    "@dev.hiconic/gm_transient-resource-model" "2.0.x"
+
+"@dev.hiconic/gm_resource-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_resource-model/-/gm_resource-model-2.0.25.tgz#c47f8ca5a86d6b64fb84e397ff9e34cd8564cb22"
+  integrity sha512-GeVadvucxz19B57XqQKn65sR28TXQAHZHvCF8y0G0LON+uDTSlaLXsjG+isQmwyCAKWflu0UyXuIU6O7Qx7X3g==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_root-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_root-model/-/gm_root-model-2.0.24.tgz#5067238cf8fa76ddbf68ef879a8af2c25d400b17"
+  integrity sha512-H8EJFzty6WawYK18PVexlEbX1lwzf2EpBZoO9xePHi+7iK8KP7gdrZ8t7/rJ/8TgHk/gwCHZjgsr37zk/Qlvpw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+
+"@dev.hiconic/gm_selector-model@2.0.x":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_selector-model/-/gm_selector-model-2.0.22.tgz#7cebbf3154b2e69181a3ad2736c2397acde088e8"
+  integrity sha512-okfkFdXN1O89U2C5vmB8LPJGsQ1jbzQagrk8djDs7qIlwokhvk+/s/mKIN21S7gE+tIkRgB4GmwmmoYrJ8gKOg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_service-api-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_service-api-model/-/gm_service-api-model-2.0.24.tgz#bdb8bc78a02bf2df219608bea5801bca3bfe4959"
+  integrity sha512-ro5XzcqpjQ8mnNozbzdA2EZ8fAuvPQDs7OlqPsDcZyMfa0iNj9S75MTPg0WBeJ6NyC+ETSeNyJ0b937F0mQKPQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_reason-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_service-value-descriptor-model@2.0.x":
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_service-value-descriptor-model/-/gm_service-value-descriptor-model-2.0.23.tgz#6ec4c9dfb2342416e3da76c32cba9f1d31ed432c"
+  integrity sha512-eAOGFHyznNSfyxmXQNNG6wgG5/quoFvBzbe+u0pidZnrbiTJXFPEfqI++l+VvpSeWEDieMezNswIGiu9MKuHUQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+
+"@dev.hiconic/gm_template-model@2.0.x":
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_template-model/-/gm_template-model-2.0.23.tgz#4a1f3631cb3d02225e0de254b279f747aaffc8bc"
+  integrity sha512-BRb/Ce9snP3rZJJJ+dkCkugJYiV930LyaEjRplelsFkz8Sjuv9e1Afe5o7J1QNrYulJ7T6WR6aTTruOIyZukVg==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_manipulation-model" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_test-model@^2.0.27":
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_test-model/-/gm_test-model-2.0.27.tgz#1a9d5bba253300d71c8a6103b590763c764235cd"
+  integrity sha512-UrK82DRjf+qXadolfqlW8stGfJjDgLDePtffpHDPT/g3RHgiJwu1/UK97+aI0XtvHxXySNg5sDYn51knNgfEsA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_time-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_time-model/-/gm_time-model-2.0.25.tgz#0c22c56040ac5042e9e9881751f9b54416a32dc8"
+  integrity sha512-WWuBpRohrGGiHzUeLYdjJzEynu2bkZiOUoznOJcBXY0qUeTA5sv/CNzyaknNzqA0+0oCVXbcGN4uTOgVCzxnkw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_transient-resource-model@2.0.x":
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_transient-resource-model/-/gm_transient-resource-model-2.0.27.tgz#1622c199f5f11650e15af92e5e547d9895e5ee54"
+  integrity sha512-suqmyYbIbNxi1nEfXgf28AZez7qnxgICh6sO4cAtaNtwEoyA7fHu/Ju/dhKE4lQdjCszXs4RBrXRnIZVMW8/cw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_resource-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_traversing-criteria-model@2.0.x":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_traversing-criteria-model/-/gm_traversing-criteria-model-2.0.28.tgz#a0c084bb429eed332f9d63ede00b4ef4df1e6c7d"
+  integrity sha512-Ag04N5v5OjHjfZImfqDoZZ0sqLDz3m+u+eOGCyhQlY0u0eJs4wnl2avDJhn4quinEsvlEeLF9iP1sPxrloAw5Q==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_type-condition-model" "2.0.x"
+
+"@dev.hiconic/gm_type-condition-model@2.0.x":
+  version "2.0.26"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_type-condition-model/-/gm_type-condition-model-2.0.26.tgz#e79b6bdf74d875505177a0b8322d18c5cdb61d28"
+  integrity sha512-TnPVNM2owu5l2f8TSZpReSFXVwYYpS2kuBEr1FhDiTFaW1sAI9gRE59LHb6/ldCC7aCczzYud9e7FJGxFaj5uw==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_user-model@2.0.x":
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_user-model/-/gm_user-model-2.0.24.tgz#443cbcd0597f14b576df340410ace3812a733e09"
+  integrity sha512-4gGguulwSfbc243UcML7rLvOXOd2P+GkaSxvEX+FtXYC/8TLI/WYKoID6XmYHATGjEGptkP6j44d8ALi9IzruA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_icon-model" "2.0.x"
+    "@dev.hiconic/gm_resource-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/gm_user-session-model@2.0.x":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_user-session-model/-/gm_user-session-model-2.0.25.tgz#23dd6322196c0eaa65e7b418b8ffed94c0fbb382"
+  integrity sha512-c8edqmtiG1TgAVR0a3sXdLxFJj3BxAeoat5qHYnUqyiIDFUY4NCVqWaSXxSpBq06Uic/73NDvP+mvh1ndtmMQQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_time-model" "2.0.x"
+    "@dev.hiconic/gm_user-model" "2.0.x"
+
+"@dev.hiconic/gm_value-descriptor-model@2.0.x":
+  version "2.0.26"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/gm_value-descriptor-model/-/gm_value-descriptor-model-2.0.26.tgz#8cc56b82c329d08425d6c1bb444af3572f1e2367"
+  integrity sha512-L7okIezkFuzmZh3IJTw+mdoewHl8owWegDOCoifX4I8XdiytfKfa4e8rLPQTRvjeO2R9917FjAObNTp7DDmLHQ==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/tf.js_model-path-aux-model@3.0.x":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/tf.js_model-path-aux-model/-/tf.js_model-path-aux-model-3.0.2.tgz#b7a23ee822920fe3d509db27626b22500da47096"
+  integrity sha512-OD8rnGhEOM1wXsYjP+3yI8YTd2SCMDLkTycm53Zq1UONWLIN4f2MeVus7BVpK33GfpQFJKTUp52DiTnLsqjBEA==
+  dependencies:
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+
+"@dev.hiconic/tf.js_tf-js@^3.0.132":
+  version "3.0.132"
+  resolved "https://registry.yarnpkg.com/@dev.hiconic/tf.js_tf-js/-/tf.js_tf-js-3.0.132.tgz#e863f527cce5d4240a6d74c38ae35c99d5fbaef1"
+  integrity sha512-CzQuEM6W28xWzm7QSJjCh55X5nt2Cy7CR7RbIFI4C9D+QA5pKa9IytnlDg4jb5G59IFyua8ac7Trne2sPEIAVg==
+  dependencies:
+    "@dev.hiconic/gm_absence-information-model" "2.0.x"
+    "@dev.hiconic/gm_access-api-model" "2.0.x"
+    "@dev.hiconic/gm_access-control-model" "2.0.x"
+    "@dev.hiconic/gm_access-request-model" "2.0.x"
+    "@dev.hiconic/gm_basic-resource-model" "2.0.x"
+    "@dev.hiconic/gm_basic-value-descriptor-model" "2.0.x"
+    "@dev.hiconic/gm_cache-control-model" "2.0.x"
+    "@dev.hiconic/gm_descriptive-model" "2.0.x"
+    "@dev.hiconic/gm_essential-meta-data-model" "2.0.x"
+    "@dev.hiconic/gm_gm-core-api" "2.0.x"
+    "@dev.hiconic/gm_i18n-model" "2.0.x"
+    "@dev.hiconic/gm_icon-model" "2.0.x"
+    "@dev.hiconic/gm_logging-model" "2.0.x"
+    "@dev.hiconic/gm_manipulation-model" "2.0.x"
+    "@dev.hiconic/gm_meta-data-model" "2.0.x"
+    "@dev.hiconic/gm_meta-model" "2.0.x"
+    "@dev.hiconic/gm_meta-model-api-model" "2.0.x"
+    "@dev.hiconic/gm_model-accessory-api-model" "2.0.x"
+    "@dev.hiconic/gm_model-path-model" "2.0.x"
+    "@dev.hiconic/gm_owner-model" "2.0.x"
+    "@dev.hiconic/gm_pagination-model" "2.0.x"
+    "@dev.hiconic/gm_persistence-reflection-api-model" "2.0.x"
+    "@dev.hiconic/gm_query-model" "2.0.x"
+    "@dev.hiconic/gm_query-plan-model" "2.0.x"
+    "@dev.hiconic/gm_reason-model" "2.0.x"
+    "@dev.hiconic/gm_record-model" "2.0.x"
+    "@dev.hiconic/gm_resource-api-model" "2.0.x"
+    "@dev.hiconic/gm_resource-model" "2.0.x"
+    "@dev.hiconic/gm_root-model" "2.0.x"
+    "@dev.hiconic/gm_selector-model" "2.0.x"
+    "@dev.hiconic/gm_service-api-model" "2.0.x"
+    "@dev.hiconic/gm_service-value-descriptor-model" "2.0.x"
+    "@dev.hiconic/gm_template-model" "2.0.x"
+    "@dev.hiconic/gm_time-model" "2.0.x"
+    "@dev.hiconic/gm_transient-resource-model" "2.0.x"
+    "@dev.hiconic/gm_traversing-criteria-model" "2.0.x"
+    "@dev.hiconic/gm_type-condition-model" "2.0.x"
+    "@dev.hiconic/gm_user-model" "2.0.x"
+    "@dev.hiconic/gm_user-session-model" "2.0.x"
+    "@dev.hiconic/gm_value-descriptor-model" "2.0.x"
+    "@dev.hiconic/tf.js_model-path-aux-model" "3.0.x"
+
 "@esbuild/aix-ppc64@0.21.5":
   version "0.21.5"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.21.5.tgz#c7184a326533fcdf1b8ee0733e21c713b975575f"
@@ -1030,6 +1456,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@polka/url@^1.0.0-next.24":
+  version "1.0.0-next.28"
+  resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.28.tgz#d45e01c4a56f143ee69c54dd6b12eade9e270a73"
+  integrity sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==
+
 "@rollup/plugin-babel@^6.0.3":
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-6.0.4.tgz#bd698e351fa9aa9619fcae780aea2a603d98e4c4"
@@ -1206,15 +1637,82 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
-"@types/lodash@^4.17.13":
-  version "4.17.13"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.13.tgz#786e2d67cfd95e32862143abe7463a7f90c300eb"
-  integrity sha512-lfx+dftrEZcdBPczf9d0Qv0x+j/rfNCMuC6OcfXmO8gkfeNAY88PgKUbvG56whcN23gc27yenwF6oJZXGFpYxg==
-
 "@types/resolve@1.20.2":
   version "1.20.2"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.2.tgz#97d26e00cd4a0423b4af620abecf3e6f442b7975"
   integrity sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==
+
+"@vitest/expect@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/expect/-/expect-2.1.4.tgz#48f4f53a01092a3bdc118cff245f79ef388bdd8e"
+  integrity sha512-DOETT0Oh1avie/D/o2sgMHGrzYUFFo3zqESB2Hn70z6QB1HrS2IQ9z5DfyTqU8sg4Bpu13zZe9V4+UTNQlUeQA==
+  dependencies:
+    "@vitest/spy" "2.1.4"
+    "@vitest/utils" "2.1.4"
+    chai "^5.1.2"
+    tinyrainbow "^1.2.0"
+
+"@vitest/mocker@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/mocker/-/mocker-2.1.4.tgz#0dc07edb9114f7f080a0181fbcdb16cd4a2d855d"
+  integrity sha512-Ky/O1Lc0QBbutJdW0rqLeFNbuLEyS+mIPiNdlVlp2/yhJ0SbyYqObS5IHdhferJud8MbbwMnexg4jordE5cCoQ==
+  dependencies:
+    "@vitest/spy" "2.1.4"
+    estree-walker "^3.0.3"
+    magic-string "^0.30.12"
+
+"@vitest/pretty-format@2.1.4", "@vitest/pretty-format@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/pretty-format/-/pretty-format-2.1.4.tgz#fc31993bdc1ef5a6c1a4aa6844e7ba55658a4f9f"
+  integrity sha512-L95zIAkEuTDbUX1IsjRl+vyBSLh3PwLLgKpghl37aCK9Jvw0iP+wKwIFhfjdUtA2myLgjrG6VU6JCFLv8q/3Ww==
+  dependencies:
+    tinyrainbow "^1.2.0"
+
+"@vitest/runner@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/runner/-/runner-2.1.4.tgz#f9346500bdd0be1c926daaac5d683bae87ceda2c"
+  integrity sha512-sKRautINI9XICAMl2bjxQM8VfCMTB0EbsBc/EDFA57V6UQevEKY/TOPOF5nzcvCALltiLfXWbq4MaAwWx/YxIA==
+  dependencies:
+    "@vitest/utils" "2.1.4"
+    pathe "^1.1.2"
+
+"@vitest/snapshot@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/snapshot/-/snapshot-2.1.4.tgz#ef8c3f605fbc23a32773256d37d3fdfd9b23d353"
+  integrity sha512-3Kab14fn/5QZRog5BPj6Rs8dc4B+mim27XaKWFWHWA87R56AKjHTGcBFKpvZKDzC4u5Wd0w/qKsUIio3KzWW4Q==
+  dependencies:
+    "@vitest/pretty-format" "2.1.4"
+    magic-string "^0.30.12"
+    pathe "^1.1.2"
+
+"@vitest/spy@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/spy/-/spy-2.1.4.tgz#4e90f9783437c5841a27c80f8fd84d7289a6100a"
+  integrity sha512-4JOxa+UAizJgpZfaCPKK2smq9d8mmjZVPMt2kOsg/R8QkoRzydHH1qHxIYNvr1zlEaFj4SXiaaJWxq/LPLKaLg==
+  dependencies:
+    tinyspy "^3.0.2"
+
+"@vitest/ui@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/ui/-/ui-2.1.4.tgz#fcd0928c1d24301e4e5c2d3783150a0c391966ff"
+  integrity sha512-Zd9e5oU063c+j9N9XzGJagCLNvG71x/2tOme3Js4JEZKX55zsgxhJwUgLI8hkN6NjMLpdJO8d7nVUUuPGAA58Q==
+  dependencies:
+    "@vitest/utils" "2.1.4"
+    fflate "^0.8.2"
+    flatted "^3.3.1"
+    pathe "^1.1.2"
+    sirv "^3.0.0"
+    tinyglobby "^0.2.9"
+    tinyrainbow "^1.2.0"
+
+"@vitest/utils@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vitest/utils/-/utils-2.1.4.tgz#6d67ac966647a21ce8bc497472ce230de3b64537"
+  integrity sha512-MXDnZn0Awl2S86PSNIim5PWXgIAx8CIkzu35mBdSApUip6RFOGXBCf3YFyeEu8n1IHk4bWD46DeYFu9mQlFIRg==
+  dependencies:
+    "@vitest/pretty-format" "2.1.4"
+    loupe "^3.1.2"
+    tinyrainbow "^1.2.0"
 
 acorn@^8.8.2:
   version "8.14.0"
@@ -1228,6 +1726,11 @@ anymatch@~3.1.2:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
+
+assertion-error@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-2.0.1.tgz#f641a196b335690b1070bf00b6e7593fec190bf7"
+  integrity sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==
 
 babel-plugin-jsx-dom-expressions@^0.39.3:
   version "0.39.3"
@@ -1299,10 +1802,31 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
+cac@^6.7.14:
+  version "6.7.14"
+  resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.14.tgz#804e1e6f506ee363cb0e3ccbb09cad5dd9870959"
+  integrity sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==
+
 caniuse-lite@^1.0.30001669:
   version "1.0.30001677"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001677.tgz#27c2e2c637e007cfa864a16f7dfe7cde66b38b5f"
   integrity sha512-fmfjsOlJUpMWu+mAAtZZZHz7UEwsUxIIvu1TJfO1HqFQvB/B+ii0xr9B5HpbZY/mC4XZ8SvjHJqtAY6pDPQEog==
+
+chai@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/chai/-/chai-5.1.2.tgz#3afbc340b994ae3610ca519a6c70ace77ad4378d"
+  integrity sha512-aGtmf24DW6MLHHG5gCx4zaI3uBq3KRtxeVs0DjFH6Z0rDNbsvTxFASFvdj79pxjxZ8/5u3PIiN3IwEIQkiiuPw==
+  dependencies:
+    assertion-error "^2.0.1"
+    check-error "^2.1.1"
+    deep-eql "^5.0.1"
+    loupe "^3.1.0"
+    pathval "^2.0.0"
+
+check-error@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/check-error/-/check-error-2.1.1.tgz#87eb876ae71ee388fa0471fe423f494be1d96ccc"
+  integrity sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==
 
 chokidar@^3.5.3:
   version "3.6.0"
@@ -1351,12 +1875,17 @@ csstype@^3.1.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.7:
   version "4.3.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
   integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
   dependencies:
     ms "^2.1.3"
+
+deep-eql@^5.0.1:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/deep-eql/-/deep-eql-5.0.2.tgz#4b756d8d770a9257300825d52a2c2cff99c3a341"
+  integrity sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==
 
 deepmerge@^4.2.2:
   version "4.3.1"
@@ -1540,10 +2069,22 @@ estree-walker@^2.0.2:
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
+estree-walker@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-3.0.3.tgz#67c3e549ec402a487b4fc193d1953a524752340d"
+  integrity sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==
+  dependencies:
+    "@types/estree" "^1.0.0"
+
 esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+
+expect-type@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/expect-type/-/expect-type-1.1.0.tgz#a146e414250d13dfc49eafcfd1344a4060fa4c75"
+  integrity sha512-bFi65yM+xZgk+u/KRIpekdSYkTB5W1pEf0Lt8Q8Msh7b+eQ7LXVtIB1Bkm4fvclDEL1b2CZkMhv2mOeF8tMdkA==
 
 fast-glob@^3.2.11:
   version "3.3.2"
@@ -1563,10 +2104,15 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fdir@^6.2.0:
+fdir@^6.2.0, fdir@^6.4.2:
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.2.tgz#ddaa7ce1831b161bc3657bb99cb36e1622702689"
   integrity sha512-KnhMXsKSPZlAhp7+IjUkRZKPb4fUyccpDrdFXbi4QL1qkmFh9kVY09Yox+n4MaOb3lHZ1Tv829C3oaaXoMYPDQ==
+
+fflate@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.8.2.tgz#fc8631f5347812ad6028bbe4a2308b2792aa1dea"
+  integrity sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==
 
 fill-range@^7.1.1:
   version "7.1.1"
@@ -1574,6 +2120,11 @@ fill-range@^7.1.1:
   integrity sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==
   dependencies:
     to-regex-range "^5.0.1"
+
+flatted@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
+  integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
 
 fs-extra@^11.1.0:
   version "11.2.0"
@@ -1705,10 +2256,10 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
 
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+loupe@^3.1.0, loupe@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/loupe/-/loupe-3.1.2.tgz#c86e0696804a02218f2206124c45d8b15291a240"
+  integrity sha512-23I4pFZHmAemUnz8WZXbYRSKYj801VDaNv9ETuMh7IrMc7VuVVSo+Z9iLE3ni30+U48iDWfi30d3twAXBYmnCg==
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -1717,7 +2268,7 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-magic-string@^0.30.3:
+magic-string@^0.30.12, magic-string@^0.30.3:
   version "0.30.12"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.12.tgz#9eb11c9d072b9bcb4940a5b2c2e1a217e4ee1a60"
   integrity sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==
@@ -1743,6 +2294,11 @@ micromatch@^4.0.4:
   dependencies:
     braces "^3.0.3"
     picomatch "^2.3.1"
+
+mrmime@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-2.0.0.tgz#151082a6e06e59a9a39b46b3e14d5cfe92b3abb4"
+  integrity sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==
 
 ms@^2.1.3:
   version "2.1.3"
@@ -1775,6 +2331,16 @@ path-parse@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
+
+pathe@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
+  integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
+
+pathval@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pathval/-/pathval-2.0.0.tgz#7e2550b422601d4f6b8e26f1301bc8f15a741a25"
+  integrity sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==
 
 picocolors@^1.0.0, picocolors@^1.1.0:
   version "1.1.1"
@@ -1948,6 +2514,20 @@ seroval@^1.1.0:
   resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.1.1.tgz#7630e0c17a3efa6be43f17ad6bcf9f966a61b443"
   integrity sha512-rqEO6FZk8mv7Hyv4UCj3FD3b6Waqft605TLfsCe/BiaylRpyyMC0b+uA5TJKawX3KzMrdi3wsLbCaLplrQmBvQ==
 
+siginfo@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/siginfo/-/siginfo-2.0.0.tgz#32e76c70b79724e3bb567cb9d543eb858ccfaf30"
+  integrity sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==
+
+sirv@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-3.0.0.tgz#f8d90fc528f65dff04cb597a88609d4e8a4361ce"
+  integrity sha512-BPwJGUeDaDCHihkORDchNyyTvWFhcusy1XMmhEVTQTwGeybFbp8YEmB+njbPnth1FibULBSBVwCQni25XlCUDg==
+  dependencies:
+    "@polka/url" "^1.0.0-next.24"
+    mrmime "^2.0.0"
+    totalist "^3.0.0"
+
 solid-js@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.9.3.tgz#078f026fe32f6b9b48e8e0557be150f0c2d610a9"
@@ -1984,6 +2564,16 @@ source-map@^0.6.0:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+stackback@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/stackback/-/stackback-0.0.2.tgz#1ac8a0d9483848d1695e418b6d031a3c3ce68e3b"
+  integrity sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==
+
+std-env@^3.7.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.8.0.tgz#b56ffc1baf1a29dcc80a3bdf11d7fca7c315e7d5"
+  integrity sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w==
+
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
@@ -1999,12 +2589,50 @@ terser@^5.15.1:
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
+tinybench@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/tinybench/-/tinybench-2.9.0.tgz#103c9f8ba6d7237a47ab6dd1dcff77251863426b"
+  integrity sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==
+
+tinyexec@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-0.3.1.tgz#0ab0daf93b43e2c211212396bdb836b468c97c98"
+  integrity sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==
+
+tinyglobby@^0.2.9:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.10.tgz#e712cf2dc9b95a1f5c5bbd159720e15833977a0f"
+  integrity sha512-Zc+8eJlFMvgatPZTl6A9L/yht8QqdmUNtURHaKZLmKBE12hNPSrqNkUp2cs3M/UKmNVVAMFQYSjYIVHDjW5zew==
+  dependencies:
+    fdir "^6.4.2"
+    picomatch "^4.0.2"
+
+tinypool@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tinypool/-/tinypool-1.0.1.tgz#c64233c4fac4304e109a64340178760116dbe1fe"
+  integrity sha512-URZYihUbRPcGv95En+sz6MfghfIc2OJ1sv/RmhWZLouPY0/8Vo80viwPvg3dlaS9fuq7fQMEfgRRK7BBZThBEA==
+
+tinyrainbow@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tinyrainbow/-/tinyrainbow-1.2.0.tgz#5c57d2fc0fb3d1afd78465c33ca885d04f02abb5"
+  integrity sha512-weEDEq7Z5eTHPDh4xjX789+fHfF+P8boiFB+0vbWzpbnbsEr/GRaohi/uMKxg8RZMXnl1ItAi/IUHWMsjDV7kQ==
+
+tinyspy@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-3.0.2.tgz#86dd3cf3d737b15adcf17d7887c84a75201df20a"
+  integrity sha512-n1cw8k1k0x4pgA2+9XrOkFydTerNcJ1zWCO5Nn9scWHTD+5tp8dghT2x1uduQePZTZgd3Tupf+x9BxJjeJi77Q==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+totalist@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/totalist/-/totalist-3.0.1.tgz#ba3a3d600c915b1a97872348f79c127475f6acf8"
+  integrity sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==
 
 typescript@^4.9.3:
   version "4.9.5"
@@ -2057,6 +2685,16 @@ validate-html-nesting@^1.2.1:
   resolved "https://registry.yarnpkg.com/validate-html-nesting/-/validate-html-nesting-1.2.2.tgz#2d74de14b598a0de671fad01bd71deabb93b8aca"
   integrity sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==
 
+vite-node@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-2.1.4.tgz#97ffb6de913fd8d42253afe441f9512e9dbdfd5c"
+  integrity sha512-kqa9v+oi4HwkG6g8ufRnb5AeplcRw8jUF6/7/Qz1qRQOXHImG8YnLbB+LLszENwFnoBl9xIf9nVdCFzNd7GQEg==
+  dependencies:
+    cac "^6.7.14"
+    debug "^4.3.7"
+    pathe "^1.1.2"
+    vite "^5.0.0"
+
 vite-plugin-solid@^2.10.2:
   version "2.10.2"
   resolved "https://registry.yarnpkg.com/vite-plugin-solid/-/vite-plugin-solid-2.10.2.tgz#180f5ec9d8ac03d19160dd5728b313fe9b62ee0d"
@@ -2079,7 +2717,7 @@ vite-plugin-static-copy@^2.0.0:
     fs-extra "^11.1.0"
     picocolors "^1.0.0"
 
-vite@^5.4.10:
+vite@^5.0.0, vite@^5.4.10:
   version "5.4.10"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.10.tgz#d358a7bd8beda6cf0f3b7a450a8c7693a4f80c18"
   integrity sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==
@@ -2094,6 +2732,40 @@ vitefu@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/vitefu/-/vitefu-0.2.5.tgz#c1b93c377fbdd3e5ddd69840ea3aa70b40d90969"
   integrity sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==
+
+vitest@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-2.1.4.tgz#ba8f4589fb639cf5a9e6af54781667312b3e8230"
+  integrity sha512-eDjxbVAJw1UJJCHr5xr/xM86Zx+YxIEXGAR+bmnEID7z9qWfoxpHw0zdobz+TQAFOLT+nEXz3+gx6nUJ7RgmlQ==
+  dependencies:
+    "@vitest/expect" "2.1.4"
+    "@vitest/mocker" "2.1.4"
+    "@vitest/pretty-format" "^2.1.4"
+    "@vitest/runner" "2.1.4"
+    "@vitest/snapshot" "2.1.4"
+    "@vitest/spy" "2.1.4"
+    "@vitest/utils" "2.1.4"
+    chai "^5.1.2"
+    debug "^4.3.7"
+    expect-type "^1.1.0"
+    magic-string "^0.30.12"
+    pathe "^1.1.2"
+    std-env "^3.7.0"
+    tinybench "^2.9.0"
+    tinyexec "^0.3.1"
+    tinypool "^1.0.1"
+    tinyrainbow "^1.2.0"
+    vite "^5.0.0"
+    vite-node "2.1.4"
+    why-is-node-running "^2.3.0"
+
+why-is-node-running@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/why-is-node-running/-/why-is-node-running-2.3.0.tgz#a3f69a97107f494b3cdc3bdddd883a7d65cebf04"
+  integrity sha512-hUrmaWBdVDcxvYqnyh09zunKzROWjbZTiNy8dBEjkS7ehEDQibXJ7XvlmtbwuTclUiIyN+CyXQD4Vmko8fNm8w==
+  dependencies:
+    siginfo "^2.0.0"
+    stackback "0.0.2"
 
 yallist@^3.0.2:
   version "3.1.1"
