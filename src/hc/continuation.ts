@@ -1,4 +1,4 @@
-import { lang } from "./hiconic-api";
+import { lang } from "@dev.hiconic/tf.js_hc-js-api";
 
 export type DeferredFunction = (this: Continuation, ...args: any[]) => void;
 export type ContinuationConsumer<E, C> = (this: Continuation, el: E, context: C) => void;

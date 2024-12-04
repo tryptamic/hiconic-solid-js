@@ -1,6 +1,6 @@
 import * as tM from "@dev.hiconic/gm_test-model";
 import * as rM from "@dev.hiconic/gm_root-model";
-import {session} from "./hc/hiconic-api";
+import {session} from "@dev.hiconic/tf.js_hc-js-api";
 import * as eS from "./hc/entity-signals";
 import { createSignal, onCleanup, JSX } from "solid-js";
 import { createEffect } from "solid-js";
@@ -34,7 +34,7 @@ function InputElement<E extends rM.GenericEntity, V>(props: InputFieldProps<E, V
     // Effect to sync the signal with `inputRef.valueAsDate`
 
   switch (props.signal.property.getType().getTypeCode().toString()) {
-    case "date": {
+    case "dateType": {
         const castSig = signal as any as eS.EntityPropertySignal<E, Date>;
         inputRef!.type = "date";
         createEffect(() => {
@@ -46,7 +46,7 @@ function InputElement<E extends rM.GenericEntity, V>(props: InputFieldProps<E, V
         };
         break;
       }
-      case "string": {
+      case "stringType": {
         const castSig = signal as any as eS.EntityPropertySignal<E, string>;
         inputRef!.type = "text";
         createEffect(() => {
@@ -58,7 +58,7 @@ function InputElement<E extends rM.GenericEntity, V>(props: InputFieldProps<E, V
         };
         break;
       }
-      case "integer": {
+      case "integerType": {
         const castSig = signal as any as eS.EntityPropertySignal<E, number>;
         inputRef!.type = "number";
         createEffect(() => {

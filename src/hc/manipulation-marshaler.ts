@@ -1,9 +1,10 @@
-import { eval_, service, session, modelpath, remote, reason, reflection, util, lang, time, math, T } from "../tribefire.js.tf-js-api-3.0~/tf-js-api.js";
-import { Manipulation, CompoundManipulation, InstantiationManipulation, DeleteManipulation, PropertyManipulation, ChangeValueManipulation, AddManipulation, RemoveManipulation, ClearCollectionManipulation, ManifestationManipulation, LifecycleManipulation } from "../com.braintribe.gm.manipulation-model-2.0~/ensure-manipulation-model.js";
-import * as vM from "../com.braintribe.gm.value-descriptor-model-2.0~/ensure-value-descriptor-model.js";
-import * as oM from "../com.braintribe.gm.owner-model-2.0~/ensure-owner-model.js";
-import * as rM from "../com.braintribe.gm.root-model-2.0~/ensure-root-model.js";
+import { eval_, service, session, modelpath, remote, reason, reflection, util, lang, time, math, T } from "@dev.hiconic/tf.js_hc-js-api";
+import { Manipulation, CompoundManipulation, InstantiationManipulation, DeleteManipulation, PropertyManipulation, ChangeValueManipulation, AddManipulation, RemoveManipulation, ClearCollectionManipulation, ManifestationManipulation, LifecycleManipulation } from "@dev.hiconic/gm_manipulation-model";
+import * as vM from "@dev.hiconic/gm_value-descriptor-model";
+import * as oM from "@dev.hiconic/gm_owner-model";
+import * as rM from "@dev.hiconic/gm_root-model";
 import { Continuation } from "./continuation.js"
+import { map, set, list, float, double, integer, long, decimal, date } from "@dev.hiconic/hc-js-base";
 
 import TypeCode = reflection.TypeCode
 
@@ -89,7 +90,7 @@ class ManipulationToJson extends Continuation {
     }
 
     private coalesceChanges(changes: any[]): void {
-        let cvmOp: object;
+        let cvmOp: [string, object] | null = null;
 
         let args = new Array<any>();
 
@@ -129,11 +130,13 @@ class ManipulationToJson extends Continuation {
             case DeleteManipulation: return this.deleteToJson(m as DeleteManipulation);
             case ClearCollectionManipulation: return this.clearToJson(m as ClearCollectionManipulation);
         }
+
+        throw new Error("unknown manipulation type " + m.EntityType().getTypeSignature());
     }
 
     private manipulationsToJson(manipulations: Iterable<Manipulation>, jsons: any[]): void {
 
-        let latestChange: any[];
+        let latestChange: any[] | null;
         let multiChange: boolean = false;
         
         this.forEachOf(manipulations, m => {
@@ -216,14 +219,14 @@ class ManipulationToJson extends Continuation {
             
             case TypeCode.listType:
                 const listType = type as reflection.ListType;
-                const listMapType = reflection.typeReflection().getMapType(reflection.EssentialTypes.INTEGER, listType.getCollectionElementType());
+                const listMapType = reflection.typeReflection().getMapType(reflection.INTEGER, listType.getCollectionElementType());
                 items = this.mapToJson(listMapType, itemsToAddOrRemove);
                 break;
 
             case TypeCode.setType:
                 const setType = type as reflection.SetType;
                 // TODO: ask Peter about naming of our collections in general
-                const set = new T.Setish();
+                const set = new T.Set<any>();
                 itemsToAddOrRemove.forEach(e => set.add(e));
                 items = this.setToJson(setType, set);
                 break;
@@ -265,9 +268,9 @@ class ManipulationToJson extends Continuation {
         enumType(v: lang.Enum<any>, t): EnumTuple { return ["E", t.getTypeSignature(), v.toString()]; },
         entitType(v: rM.GenericEntity) { return ["E", (v as rM.GenericEntity).globalId]; },
 
-        listType: (v: list<any>, t: reflection.ListType) => { return this.listToJson(t, v); },
-        setType: (v: set<any>, t: reflection.SetType) => { return this.setToJson(t, v); },
-        mapType: (v: map<any, any>, t: reflection.MapType): CollectionTuple => { return this.mapToJson(t, v); },
+        listType: (v: list<any>, t) => { return this.listToJson(t as reflection.ListType, v); },
+        setType: (v: set<any>, t) => { return this.setToJson(t as reflection.SetType, v); },
+        mapType: (v: map<any, any>, t): CollectionTuple => { return this.mapToJson(t as reflection.MapType, v); },
 
         dateType(v: date): DateTuple { return ["t", 
             v.getUTCFullYear(), v.getUTCMonth(), v.getUTCDate(),
@@ -353,7 +356,7 @@ class JsonToManipulation extends Continuation {
 
     private jsonToValue(json: any, typeConsumer?: (type: reflection.GenericModelType) => void): any {
         if (json == null) {
-            typeConsumer?.(reflection.EssentialTypes.TYPE_OBJECT);
+            typeConsumer?.(reflection.OBJECT);
             return null;
         }
 
@@ -432,13 +435,13 @@ class JsonToManipulation extends Continuation {
             case TypeCode.setType:
             case TypeCode.listType: {
                 const c: lang.Collection<any> = value;
-                const m = new T.Mapish();
+                const m = new T.Map<any, any>();
                 for (const e of c.iterable())
                     m.set(e,e);
                 return m;
             }
             default: {
-                const m = new T.Mapish();
+                const m = new T.Map<any, any>();
                 m.set(value, value);
                 return m;
             }
@@ -463,7 +466,7 @@ class JsonToManipulation extends Continuation {
 
                 let type: reflection.GenericModelType;
                 const items = this.jsonToValue(entry[1], t => type = t);
-                m.itemsToAdd = this.mappify(items, type);
+                m.itemsToAdd = this.mappify(items, type!);
                 
                 consumer(m);
             });
@@ -476,7 +479,7 @@ class JsonToManipulation extends Continuation {
 
                 let type: reflection.GenericModelType;
                 const items = this.jsonToValue(entry[1], t => type = t);
-                m.itemsToRemove = this.mappify(items, type);
+                m.itemsToRemove = this.mappify(items, type!);
                 
                 consumer(m);
             });
@@ -494,9 +497,9 @@ class JsonToManipulation extends Continuation {
     }
 
     private valueExperts: Experts<(json: any, typeConsumer?: (type: reflection.GenericModelType) => void) => any> = {
-        string(json, tc): string { tc?.(reflection.EssentialTypes.STRING); return json; },
-        boolean(json, tc): boolean { tc?.(reflection.EssentialTypes.BOOLEAN); return json; },
-        number(json, tc): number { tc?.(reflection.EssentialTypes.INTEGER); return json; },
+        string(json, tc): string { tc?.(reflection.STRING); return json; },
+        boolean(json, tc): boolean { tc?.(reflection.BOOLEAN); return json; },
+        number(json, tc): number { tc?.(reflection.INTEGER); return json; },
         object: (json, tc): any => {
             const op: string = json[0];
             return this.exValueExperts[op](json, tc);
@@ -505,15 +508,18 @@ class JsonToManipulation extends Continuation {
 
     private exValueExperts: Experts<(json: any[], typeConsumer?: (type: reflection.GenericModelType) => void) => any> = {
         // base types: f = float, d = double, l = long,
-        f(json, tc): float { tc?.(reflection.EssentialTypes.FLOAT); return new T.Float((json as FloatTuple)[1]); },
-        d(json, tc): double { tc?.(reflection.EssentialTypes.DOUBLE); return new T.Double((json as DoubleTuple)[1]); },
-        l(json, tc): long { tc?.(reflection.EssentialTypes.LONG); return BigInt((json as LongTuple)[1]); },
-        D(json, tc): decimal { tc?.(reflection.EssentialTypes.DECIMAL); return math.bigDecimalFromString((json as DecimalTuple)[1]); },
-        t(json, tc): date { tc?.(reflection.EssentialTypes.DATE); return new Date(Date.UTC.apply(null, json.slice[1])); },
+        f(json, tc): float { tc?.(reflection.FLOAT); return new T.Float((json as FloatTuple)[1]); },
+        d(json, tc): double { tc?.(reflection.DOUBLE); return new T.Double((json as DoubleTuple)[1]); },
+        l(json, tc): long { tc?.(reflection.LONG); return BigInt((json as LongTuple)[1]); },
+        D(json, tc): decimal { tc?.(reflection.DECIMAL); return math.bigDecimalFromString((json as DecimalTuple)[1]); },
+        t(json, tc): date { tc?.(reflection.DATE); return new Date(Date.UTC.apply(null, json.slice(1) as [number, number, number, number, number, number, number])); },
 
         L: (json, tc): list<any> => {
-            tc?.(reflection.EssentialTypes.LIST);
-            const list = new T.Arrayish();
+            tc?.(reflection.LIST);
+
+            T.Decimal
+
+            const list = new T.Array<any>();
             const it = json[Symbol.iterator]();
 
             // eat up type-code so that only elements remain
@@ -525,9 +531,9 @@ class JsonToManipulation extends Continuation {
         },
 
         // decode Set
-        S(json, tc): set<any> {
-            tc?.(reflection.EssentialTypes.SET);
-            const set = new T.Setish();
+        S: (json, tc): set<any> => {
+            tc?.(reflection.SET);
+            const set = new T.Set<any>();
             const it = json[Symbol.iterator]();
             
             // eat up type-code so that only elements remain
@@ -539,15 +545,15 @@ class JsonToManipulation extends Continuation {
         },
 
         // decode Map
-        M(json, tc): map<any,any> {
-            tc?.(reflection.EssentialTypes.MAP);
-            const map = new T.Mapish();
+        M: (json, tc): map<any,any> => {
+            tc?.(reflection.MAP);
+            const map = new T.Map<any, any>();
             const it = json[Symbol.iterator]();
             
             // eat up type-code so that only elements remain
             it.next();
 
-            let key = undefined;
+            let key: any | undefined = undefined;
 
             this.forEachOf(it, e => {
                 if (key === undefined) {
@@ -563,7 +569,7 @@ class JsonToManipulation extends Continuation {
             return map;
         },
 
-        E(json, tc): rM.GenericEntity {
+        E: (json, tc): rM.GenericEntity => {
             const id = (json as EntityTuple)[1];
             const ref = vM.GlobalEntityReference.create();
             ref.refId = id;
@@ -572,11 +578,11 @@ class JsonToManipulation extends Continuation {
             return ref;
         },
 
-        e(json, tc): lang.Enum<any> {
+        e: (json, tc): lang.Enum<any> => {
             const tuple= json as EnumTuple;
             const type = reflection.typeReflection().getEnumTypeBySignature(tuple[1]);
             tc?.(type);
-            return type.findEnumValue(tuple[2]);
+            return type.findConstant(tuple[2]);
         },
     }
 }

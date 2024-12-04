@@ -1,4 +1,4 @@
-import { eval_, service, session, modelpath, remote, reason, reflection, util, manipulation } from "./hiconic-api";
+import { eval_, service, session, modelpath, remote, reason, reflection, util, manipulation } from "@dev.hiconic/tf.js_hc-js-api";
 import * as mM from "@dev.hiconic/gm_manipulation-model";
 import * as rM from "@dev.hiconic/gm_root-model";
 import { ManipulationBuffer, ManipulationBufferUpdateListener, SessionManipulationBuffer } from "./manipulation-buffer.js";

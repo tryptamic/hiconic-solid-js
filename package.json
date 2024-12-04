@@ -17,25 +17,29 @@
   "license": "ISC",
   "dependencies": {
     "@dev.hiconic/gm_test-model": "^2.0.27",
-    "@dev.hiconic/tf.js_tf-js": "^3.0.132",
+    "@dev.hiconic/tf.js_hc-js-api": "^3.0.10",
+    "@dev.hiconic/tf.js_tf-js": "^3.0.145",
+    "@dev.hiconic/runtime": "file:./node_modules/@dev.hiconic/tf.js_tf-js",
     "solid-js": "^1.9.3"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
-    "@vitest/ui": "^2.1.4",
-    "rollup": "^3.29.5",
+    "jsdom": "^25.0.1",
+    "rollup": "^4.27.4",
     "rollup-preset-solid": "^2.0.1",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vite-plugin-solid": "^2.10.2",
-    "vite-plugin-static-copy": "^2.0.0",
-    "vitest": "^2.1.4"
+    "typescript": "^5.7.2",
+    "vite": "^6.0.1",
+    "vite-node": "^2.1.6",
+    "vite-plugin-solid": "^2.11.0",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vitest": "^2.1.6"
   },
   "source": "src/index.tsx",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "assets"
   ]
 }

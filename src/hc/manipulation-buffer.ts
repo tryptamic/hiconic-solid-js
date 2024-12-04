@@ -1,4 +1,4 @@
-import { session } from "./hiconic-api";
+import { session } from "@dev.hiconic/tf.js_hc-js-api";
 import * as mM from "@dev.hiconic/gm_manipulation-model";
 
 export type ManipulationBufferUpdateListener = (buffer: ManipulationBuffer) => void;

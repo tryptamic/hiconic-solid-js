@@ -1,8 +1,8 @@
 import { createSignal } from "solid-js";
-import "./hc/hiconic-api";
 import PageOne from "./PageOne";
 import PageTwo from "./PageTwo";
 import * as rM from "@dev.hiconic/gm_resource-model";
+
 
 const r = rM.Resource.create();
 r.name = "test";
