@@ -17,9 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@dev.hiconic/gm_test-model": "^2.0.27",
+    "@dev.hiconic/runtime": "file:./hc-rt",
     "@dev.hiconic/tf.js_hc-js-api": "^3.0.10",
-    "@dev.hiconic/tf.js_tf-js": "^3.0.145",
-    "@dev.hiconic/runtime": "file:./node_modules/@dev.hiconic/tf.js_tf-js",
     "solid-js": "^1.9.3"
   },
   "devDependencies": {
@@ -39,7 +38,6 @@
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist",
-    "assets"
+    "dist"
   ]
 }

@@ -24,6 +24,7 @@ interface EntitySignalBuilder<E extends rM.GenericEntity> {
 class EntityPropertySignalImpl<E extends rM.GenericEntity, V> implements EntityPropertySignal<E, V> {
   getter: Accessor<V>;
   setter: Setter<V>;
+  signal: Signal<V>
   entity: E;
   property: reflection.Property;
   disposer: () => void;
@@ -33,6 +34,7 @@ class EntityPropertySignalImpl<E extends rM.GenericEntity, V> implements EntityP
     this.property = property;
     this.getter = signal[0];
     this.setter = signal[1];
+    this.signal = signal;
     this.disposer = disposer;
   }
 }

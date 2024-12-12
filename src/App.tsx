@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 import PageOne from "./PageOne";
 import PageTwo from "./PageTwo";
 import * as rM from "@dev.hiconic/gm_resource-model";
@@ -9,6 +9,13 @@ r.name = "test";
 
 const App = () => {
   const [page, setPage] = createSignal(1);
+
+  const [name, setName] = createSignal(r.name);
+
+  createEffect(() => {
+    const v = name();
+    r.name = v;
+  });
 
   return (
     <div>

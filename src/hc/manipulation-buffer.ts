@@ -35,6 +35,8 @@ export interface ManipulationBuffer {
     endCompoundManipulation(): void;
     
     compoundManipulation<R>(manipulator: () => R): R;
+
+    getCommitManipulations(): mM.Manipulation[];
 }
 
 interface TrackingFrame {

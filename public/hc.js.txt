@@ -1,5 +1,0 @@
-export function foo() {
-    console.log("Hello World");
-}
-
-console.log("loaded");

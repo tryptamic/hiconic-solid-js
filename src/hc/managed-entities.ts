@@ -1,10 +1,10 @@
 import { eval_, service, session, modelpath, remote, reason, reflection, util, manipulation } from "@dev.hiconic/tf.js_hc-js-api";
 import * as mM from "@dev.hiconic/gm_manipulation-model";
 import * as rM from "@dev.hiconic/gm_root-model";
-import { ManipulationBuffer, ManipulationBufferUpdateListener, SessionManipulationBuffer } from "./manipulation-buffer.js";
+import { ManipulationBuffer, ManipulationBufferUpdateListener, SessionManipulationBuffer } from "./manipulation-buffer";
 import { PersistentEntityReference, GlobalEntityReference } from "@dev.hiconic/gm_value-descriptor-model";
 
-export { ManipulationBuffer, ManipulationBufferUpdateListener };
+export type { ManipulationBuffer, ManipulationBufferUpdateListener };
 
 /** 
  * Opens a {@link ManagedEntities} instance backed by the indexedDB named "event-source-db".
@@ -126,7 +126,8 @@ class ManagedEntitiesImpl implements ManagedEntities {
     }
 
     private initAndAttach<E extends rM.GenericEntity>(entity: E, properties?: PartialProperties<E>): E {
-        properties || Object.assign(entity, properties);
+        if (properties)
+            Object.assign(entity, properties);
 
         if (!entity.globalId)
             entity.globalId = util.newUuid();
